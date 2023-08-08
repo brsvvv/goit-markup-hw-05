@@ -763,6 +763,7 @@ ol {
     align-items: center;
     justify-content: center;
     fill: transparent;
+    border-radius: 2px;
 }
 .modal-check:checked + .modal-span {
     background-color: var(--ocean);
