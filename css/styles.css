@@ -696,10 +696,10 @@ ol {
     fill: #4d5ae5;
 }
 
-.modal-lable {
+.modal-label {
     color: var(--lightslate, #8e8f99);
     font-size: 12px;
-    letter-spacing: 0.4em;
+    letter-spacing: 0.04em;
     line-height: 1.17;
     display: block;
     margin-bottom: 4px;
@@ -719,37 +719,76 @@ ol {
 .modal-input-wrap {
     position: relative;
 }
+
+.modal-comment-container {
+    margin-bottom: 16px;
+}
 .modal-comment {
     min-width: 100%;
-    height: 140px;
-    padding-left: 16px;
-    padding-top: 8px;
+    height: 120px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+    padding: 8px 16px;
     border-radius: 4px;
     border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.4));
     outline: transparent;
     resize: none;
+    background-color: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-comment:focus {
     border-radius: 4px;
     border: 1px solid var(--iris, #4d5ae5);
 }
+.checkbox-container {
+    margin-bottom: 24px;
+}
 .modal-check-text {
     color: var(--lightslate, #8e8f99);
     font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.48px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
 }
-.modal-check-text span {
+.modal-span {
     width: 16px;
     height: 16px;
-    border-radius: 6px;
-    border: #2e2f42;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    background-repeat: 2px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+}
+.modal-check:checked + .modal-span {
+    background-color: var(--ocean);
+    border: none;
+    fill: var(--cloud);
 }
 
 .modal-chek-link {
-    color: var(--iris, #4d5ae5);
+    color: var(--iris);
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 0.48px;
     text-decoration-line: underline;
+}
+
+.submit-btn {
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #4d5ae5;
+    border: none;
+    background-repeat: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
