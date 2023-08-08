@@ -699,7 +699,7 @@ ol {
 .modal-lable {
     color: var(--lightslate, #8e8f99);
     font-size: 12px;
-    letter-spacing: 0.48px;
+    letter-spacing: 0.4em;
     line-height: 1.17;
     display: block;
     margin-bottom: 4px;
