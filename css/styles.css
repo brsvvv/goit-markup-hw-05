@@ -771,7 +771,7 @@ ol {
     fill: var(--cloud);
 }
 
-.modal-chek-link {
+.modal-check-link {
     color: var(--iris);
     font-size: 12px;
     line-height: 16px;
@@ -817,4 +817,24 @@ ol {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     color: #ffffff;
+}
+.footer-input::placeholder {
+    color: #ffffff;
+}
+.footer-btn {
+    min-width: 165px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #4d5ae5;
+    border: none;
+    border-radius: 4px;
 }
