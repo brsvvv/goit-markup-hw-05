@@ -765,7 +765,7 @@ ol {
     fill: transparent;
     border-radius: 2px;
 }
-.modal-check:checked + .modal-span {
+.modal-check:checked + .modal-check-text .modal-span {
     background-color: var(--ocean);
     border: none;
     fill: var(--cloud);
@@ -790,6 +790,31 @@ ol {
     cursor: pointer;
     background-color: #4d5ae5;
     border: none;
-    background-repeat: 4px;
+    border-radius: 4px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-form-text {
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+}
+.container-form {
+    display: flex;
+    gap: 24px;
+}
+.footer-input {
+    width: 264px;
+    height: 40px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    color: #ffffff;
 }
